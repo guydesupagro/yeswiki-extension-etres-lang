@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="etres-lang" version="0.0" active="1">
+  <author>Florestan Bredow</author>
+  <label>etres-lang</label>
+  <desc>Traduction de l'interface du site Etres</desc>
+</plugin>
