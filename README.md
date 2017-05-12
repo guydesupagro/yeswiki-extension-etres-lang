@@ -1,14 +1,14 @@
 Extension etres-lang
 ====================
 
-Traduis l'interface du site http://etreserasmus.eu en fonction de la langue
+Traduit l'interface du site http://etreserasmus.eu en fonction de la langue
 demandée par le navigateur.
 
 L'action 'trad'
 ---------------
 
 L'extension propose une action 'trad' qui prend le paramètre 'ref'
-Sans paramètre l'action n'a aucun effet.
+Sans paramètre l'action affiche un message d'erreur.
 
 ex : {{trad ref="hat"}}
 
@@ -17,7 +17,7 @@ Les fichiers de traduction
 --------------------------
 
 Dans le dossier 'lang' de l'extension se trouve un fichier PHP par langue
-disponible. Le nom de chacun de ses fichiers est composé des deux caractères de
+disponible. Le nom de chacun de ces fichiers est composé des deux caractères de
 la langue (ex fr pour français, en pour anglais, it pour italien) suivi de
 l'extension '.php'.
 
@@ -26,13 +26,13 @@ Ce fichier contient un tableau appelé '$traductionEtres'. Dans ce tableau :
     l'action trad)
  - La valeur, sa traduction dans la langue du fichier
 
-Si le fichier correspondant a la langue demandée n'existe pas, c'est alors
+Si le fichier correspondant à la langue demandée n'existe pas, c'est alors
 l'anglais qui est choisis par défaut.
 
-Si la clé correspondant a la référence passé en paramètre de l'action n'existe
+Si la clé correspondant à la référence passé en paramètre de l'action n'existe
 pas un message d'erreur apparaît (No traduction available for 'ref').
 
-Déterminé la langue
+Déterminer la langue
 -------------------
 
 La langue est déterminé via le paramètre 'HTTP_ACCEPT_LANGUAGE' de $_SERVER.
